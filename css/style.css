@@ -1,0 +1,390 @@
+:root {
+  --background-color: #ffffff;
+  --brand-color: #2196f3;
+  --text-color-primary: #212121;
+  --text-color-secondary: #757575;
+  --text-color-adrress-op60: rgba(255, 255, 255, 0.6);
+  --set-gap30: 30px;
+  --set-gap94: 94px;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h3,
+p,
+.product-title {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.wrapper {
+  max-width: 1600px;
+}
+
+.container {
+  max-width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid tomato; */
+}
+.nav,
+.header-container,
+.main-banner,
+.nav-panel {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.nav {
+  justify-content: space-between;
+  min-height: 80px;
+}
+
+.logo {
+  color: #000000;
+  margin-right: 93px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+}
+
+.logo-brand {
+  color: var(--brand-color);
+}
+
+#current {
+  color: var(--brand-color);
+}
+
+.nav-link {
+  display: inline-block;
+  color: var(--text-color-primary);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+}
+
+.nav-item {
+  margin-right: 50px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-panel a:hover,
+:focus {
+  color: var(--brand-color);
+}
+
+.contacts-container {
+  display: flex;
+}
+
+.nav-contacts {
+  margin-right: 50px;
+}
+
+.nav-contacts:last-child {
+  margin-right: 0;
+}
+
+.nav-contacts a {
+  color: var(--text-color-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.nav-contacts a:hover,
+:focus {
+  color: var(--brand-color);
+}
+
+.main-banner {
+  background-color: #2f303a;
+  min-height: 600px;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-slogan {
+  color: var(--background-color);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: var(--brand-color);
+  color: var(--background-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: var(--text-color-primary);
+}
+
+.section-preferences,
+.whatwedo {
+  padding-top: var(--set-gap94);
+}
+
+.preferences,
+.whatwedo-container,
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preferences-list {
+  width: calc(100% / 4 - var(--set-gap30));
+  margin-right: var(--set-gap30);
+}
+
+.preferences-list:last-child {
+  margin-right: 0;
+}
+
+.preferences h3 {
+  margin-bottom: 10px;
+  color: var(--text-color-primary);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.preferences p {
+  color: var(--text-color-secondary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.whatwedo,
+.team-list {
+  padding-bottom: var(--set-gap94);
+}
+
+.whatwedo h2 {
+  color: var(--text-color-primary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.whatwedopic {
+  display: block;
+  width: calc(100% / 3 - var(--set-gap30));
+  margin-right: var(--set-gap30);
+}
+
+.whatwedopic:last-child {
+  margin-right: 0;
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-card {
+  background-color: var(--background-color);
+  width: 270px;
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team h2 {
+  color: var(--text-color-primary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.team h4 {
+  color: var(--text-color-primary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.team p {
+  color: var(--text-color-secondary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+footer {
+  background-color: #2f303a;
+}
+
+#footer .nav-contacts a {
+  font-weight: 400;
+  color: var(--text-color-adrress-op60);
+  line-height: 24px;
+}
+
+#footer .nav-contacts a:hover,
+:focus {
+  color: var(--brand-color);
+}
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-footer {
+  color: var(--background-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+  margin-bottom: 20px;
+}
+
+.logo-footer > .logo-brand {
+  color: var(--brand-color);
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--background-color);
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-filter {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--set-gap94);
+  margin-bottom: 50px;
+}
+
+.button {
+  background-color: #f5f4fa;
+  color: var(--text-color-primary);
+  width: fit-content;
+  padding: 6px 22px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+.button:hover {
+  background-color: var(--brand-color);
+  color: var(--background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-bottom: var(--set-gap94);
+}
+
+.products {
+  width: 370px;
+  height: 404px;
+  background-color: var(--background-color);
+  margin: 15px;
+}
+
+.products img {
+  display: block;
+}
+
+.product-cont {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+.products:nth-child(n + 3) {
+  margin-bottom: 0;
+}
+
+.product-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--text-color-primary);
+  text-align: left;
+  letter-spacing: 0.06em;
+}
+
+.product-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--text-color-secondary);
+  text-align: left;
+  letter-spacing: 0.03em;
+}
