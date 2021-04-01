@@ -507,10 +507,6 @@ button {
   fill: currentColor;
 }
 
-.hidden {
-  display: none;
-}
-
 .btn-filter {
   display: flex;
   justify-content: center;
